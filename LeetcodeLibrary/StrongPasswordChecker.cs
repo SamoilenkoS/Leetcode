@@ -9,6 +9,7 @@ namespace LeetcodeLibrary
         private const int MinAmount = 6;
         private const int MaxAmount = 20;
         private const int ProblemLettersCountLimit = 3;
+        //https://leetcode.com/problems/strong-password-checker/
         public static int StrongPasswordChecker(string password)
         {
             bool lower = false;

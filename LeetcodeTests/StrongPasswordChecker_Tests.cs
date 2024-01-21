@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace LeetcodeTests
 {
-    public class LeetcodeTasks_Tests
+    public class StrongPasswordChecker_Tests
     {
         [Theory]
         [TestCase("aBcd3r", 0)]
