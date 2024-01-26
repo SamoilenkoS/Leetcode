@@ -3,7 +3,7 @@ using NUnit.Framework;
 
 namespace LeetcodeTests
 {
-    public class MergeTests
+    public class Merge_Tests
     {
         [Theory]
         [TestCase(new int[] { 1, 2, 3, 0, 0, 0 }, 3, new int[] { 2, 5, 6 }, 3, new int[] { 1, 2, 2, 3, 5, 6 })]
