@@ -6,9 +6,10 @@ namespace LeetcodeLibrary
 {
     public partial class LeetcodeTasks
     {
+        // https://neetcode.io/problems/anagram-groups
         public static List<List<string>> GroupAnagrams(string[] strs)
         {
-            Dictionary<string, List<string>> anagramsHelper = new Dictionary<string, List<string>>();
+            var anagramsHelper = new Dictionary<string, List<string>>();
             foreach (string str in strs)
             {
                 var sorted = GetSortedString(str);
@@ -27,7 +28,7 @@ namespace LeetcodeLibrary
 
         private static string GetSortedString(string str)
         {
-            char[] charArray = str.ToCharArray();
+            var charArray = str.ToCharArray();
             Array.Sort(charArray);
             return new string(charArray);
         }
