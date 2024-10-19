@@ -7,7 +7,7 @@ namespace LeetcodeLibrary
     public partial class LeetcodeTasks
     {
         // https://leetcode.com/problems/group-anagrams/
-        public IList<IList<string>> GroupAnagrams(string[] strs)
+        public static IList<IList<string>> GroupAnagrams(string[] strs)
         {
             var anagramsHelper = new Dictionary<string, List<string>>();
             foreach (string str in strs)
