@@ -6,8 +6,8 @@ namespace LeetcodeLibrary
 {
     public partial class LeetcodeTasks
     {
-        // https://neetcode.io/problems/anagram-groups
-        public static List<List<string>> GroupAnagrams(string[] strs)
+        // https://leetcode.com/problems/group-anagrams/
+        public IList<IList<string>> GroupAnagrams(string[] strs)
         {
             var anagramsHelper = new Dictionary<string, List<string>>();
             foreach (string str in strs)
@@ -23,7 +23,7 @@ namespace LeetcodeLibrary
                 }
             }
 
-            return anagramsHelper.Select(x => x.Value).ToList();
+            return anagramsHelper.Select(x => x.Value).Cast<IList<string>>().ToList();
         }
 
         private static string GetSortedString(string str)

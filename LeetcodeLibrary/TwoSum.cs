@@ -4,7 +4,7 @@ namespace LeetcodeLibrary
 {
     public partial class LeetcodeTasks
     {
-        //https://neetcode.io/problems/two-integer-sum
+        //https://leetcode.com/problems/two-sum
         public static int[] TwoSum(int[] nums, int target)
         {
             Dictionary<int, int> items = new Dictionary<int, int>();
